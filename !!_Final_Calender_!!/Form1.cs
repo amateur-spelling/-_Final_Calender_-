@@ -36,7 +36,9 @@ namespace ___Final_Calender___
             Color Green  = Color.FromArgb(41, 178, 24);
             Color DGreen = Color.FromArgb(21, 111, 10);
             Color LGreen = Color.FromArgb(47, 240, 24);
-            tbnote1.ForeColor = Green;
+            if cbtheme.Text = "Green mode" {
+                
+            }
 
             // Dark mode
             Color [Gray]  = Color.FromArgb([125, 127, 125]);

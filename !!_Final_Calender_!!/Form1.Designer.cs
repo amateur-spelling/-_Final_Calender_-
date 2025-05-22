@@ -44,7 +44,7 @@
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.cbtheme = new System.Windows.Forms.ComboBox();
             this.button9 = new System.Windows.Forms.Button();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
             this.groupBox1.SuspendLayout();
@@ -207,17 +207,17 @@
             this.comboBox2.Size = new System.Drawing.Size(121, 23);
             this.comboBox2.TabIndex = 0;
             // 
-            // comboBox3
+            // cbtheme
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.cbtheme.FormattingEnabled = true;
+            this.cbtheme.Items.AddRange(new object[] {
             "Light mode",
             "Dark mode",
             "Green mode"});
-            this.comboBox3.Location = new System.Drawing.Point(263, 21);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(121, 23);
-            this.comboBox3.TabIndex = 10;
+            this.cbtheme.Location = new System.Drawing.Point(263, 21);
+            this.cbtheme.Name = "cbtheme";
+            this.cbtheme.Size = new System.Drawing.Size(121, 23);
+            this.cbtheme.TabIndex = 10;
             // 
             // button9
             // 
@@ -235,7 +235,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(781, 355);
             this.Controls.Add(this.button9);
-            this.Controls.Add(this.comboBox3);
+            this.Controls.Add(this.cbtheme);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
@@ -265,7 +265,7 @@
         private ListBox listBox2;
         private TextBox textBox2;
         private ComboBox comboBox2;
-        private ComboBox comboBox3;
+        private ComboBox cbtheme;
         private Button button9;
         private FontDialog fontDialog1;
     }
