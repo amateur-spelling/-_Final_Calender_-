@@ -41,7 +41,7 @@ namespace ___Final_Calender___
             // Dark mode
             Color [Gray]  = Color.FromArgb([125, 127, 125]);
             Color [DGray] = Color.FromArgb([81, 81, 81]);
-            Color [LGray] = Color.FromArgb([color code]);
+            Color [LGray] = Color.FromArgb([169, 169, 169]);
 
             // ! Themes/Colors variables templates !
             // [Color] theme
