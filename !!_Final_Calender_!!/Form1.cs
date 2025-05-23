@@ -22,28 +22,18 @@ namespace ___Final_Calender___
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
-        }
-
-        //private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
-        //{
-
-        //}
-
-        private void button9_Click(object sender, EventArgs e)
-        {
             // Green theme (test)
             Color Green  = Color.FromArgb(41, 178, 24);
             Color DGreen = Color.FromArgb(21, 111, 10);
             Color LGreen = Color.FromArgb(47, 240, 24);
-            if cbtheme.Text = "Green mode" {
+          //  if cbtheme.Text = "Green mode" { Fix!!!!
                 
-            }
+            
 
             // Dark mode
-            Color [Gray]  = Color.FromArgb([125, 127, 125]);
-            Color [DGray] = Color.FromArgb([81, 81, 81]);
-            Color [LGray] = Color.FromArgb([169, 169, 169]);
+           // Color [Gray]  = Color.FromArgb([125, 127, 125]);
+          //  Color [DGray] = Color.FromArgb([81, 81, 81]);
+          //  Color [LGray] = Color.FromArgb([169, 169, 169]);
 
             // ! Themes/Colors variables templates !
             // [Color] theme
@@ -52,7 +42,17 @@ namespace ___Final_Calender___
             //Color [name] = Color.FromArgb([color code]);
         }
 
-        private void btdel_Click(object sender, EventArgs e)
+        //private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
+        //{
+
+        //}
+
+        //private void button9_Click(object sender, EventArgs e)
+        //{
+            
+        //}
+
+       private void btdel_Click(object sender, EventArgs e)
         {
 
         }
