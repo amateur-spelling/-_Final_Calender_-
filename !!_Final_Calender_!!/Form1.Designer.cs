@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.gb1 = new System.Windows.Forms.GroupBox();
             this.btexit = new System.Windows.Forms.Button();
             this.btclear = new System.Windows.Forms.Button();
             this.btdel = new System.Windows.Forms.Button();
@@ -47,25 +47,25 @@
             this.cbtheme = new System.Windows.Forms.ComboBox();
             this.btcolor = new System.Windows.Forms.Button();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
-            this.groupBox1.SuspendLayout();
+            this.gb1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // gb1
             // 
-            this.groupBox1.Controls.Add(this.btexit);
-            this.groupBox1.Controls.Add(this.btclear);
-            this.groupBox1.Controls.Add(this.btdel);
-            this.groupBox1.Controls.Add(this.btsave);
-            this.groupBox1.Controls.Add(this.lbnote1);
-            this.groupBox1.Controls.Add(this.tbnote1);
-            this.groupBox1.Controls.Add(this.cbmonth);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(245, 299);
-            this.groupBox1.TabIndex = 8;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "2026";
+            this.gb1.Controls.Add(this.btexit);
+            this.gb1.Controls.Add(this.btclear);
+            this.gb1.Controls.Add(this.btdel);
+            this.gb1.Controls.Add(this.btsave);
+            this.gb1.Controls.Add(this.lbnote1);
+            this.gb1.Controls.Add(this.tbnote1);
+            this.gb1.Controls.Add(this.cbmonth);
+            this.gb1.Location = new System.Drawing.Point(12, 12);
+            this.gb1.Name = "gb1";
+            this.gb1.Size = new System.Drawing.Size(245, 299);
+            this.gb1.TabIndex = 8;
+            this.gb1.TabStop = false;
+            this.gb1.Text = "2026";
             // 
             // btexit
             // 
@@ -227,7 +227,6 @@
             this.btcolor.TabIndex = 11;
             this.btcolor.Text = "button9";
             this.btcolor.UseVisualStyleBackColor = true;
-            this.btcolor.Click += new System.EventHandler(this.button9_Click);
             // 
             // Form1
             // 
@@ -237,11 +236,11 @@
             this.Controls.Add(this.btcolor);
             this.Controls.Add(this.cbtheme);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.gb1);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.gb1.ResumeLayout(false);
+            this.gb1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
@@ -249,7 +248,7 @@
         }
 
         #endregion
-        private GroupBox groupBox1;
+        private GroupBox gb1;
         private ComboBox cbmonth;
         private TextBox tbnote1;
         private Button btexit;
