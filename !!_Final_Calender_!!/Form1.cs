@@ -18,51 +18,48 @@ namespace ___Final_Calender___
             // needs to be tested
 
         }
-        if cbtheme.Text = "Green mode" {
-            lbnote.ForeColor = Green;
-            Form1.BackColor  = DGreen;
-            gb1.BackColor    = LGreen;
-            }
-        elif cbtheme.Text = "Dark mode" {
-        
-        }
+
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            // Green theme (test)
-            Color Green  = Color.FromArgb(41, 178, 24);
-            Color DGreen = Color.FromArgb(21, 111, 10);
-            Color LGreen = Color.FromArgb(47, 240, 24);
-                
-            
+           //  for (int i = 0; i <= tLen - sLen; i++)
+           //     if (text.Substring(i, sLen) == search)
+           int tlen = cbtheme.Text.Length;
+           int dlen = 9;
+           int glen = 10;
+            int i = 0;
+           // variabletype variablename = (value or input)
+           // Green theme (test)
+           Color Green  = Color.FromArgb(41, 178, 24);
+           Color DGreen = Color.FromArgb(21, 111, 10);
+           Color LGreen = Color.FromArgb(47, 240, 24);
 
-            // Dark mode
-            Color Gray  = Color.FromArgb(125, 127, 125);
-            Color DGray = Color.FromArgb(81, 81, 81);
-            Color LGray = Color.FromArgb(169, 169, 169);
+           // Dark mode
+           Color Gray  = Color.FromArgb(125, 127, 125);
+           Color DGray = Color.FromArgb(81, 81, 81);
+           Color LGray = Color.FromArgb(169, 169, 169);
 
             // ! Themes/Colors variables templates !
             // [Color] theme
             //Color [name] = Color.FromArgb([color code]);
             //Color [name] = Color.FromArgb([color code]);
             //Color [name] = Color.FromArgb([color code]);
-            if cbtheme.Text = "Green mode" {
-                // Replace code for theme thingy
+            if (i <= tlen - glen; i++ ; {
+               lbnote1.ForeColor = Green;
+               Form1.BackColor   = DGreen;
+               gb1.BackColor     = LGreen;
             }
-
-        //private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
-        //{
-
-        //}
-
-        //private void button9_Click(object sender, EventArgs e)
-        //{
-
-        //}
+        
+           if (result) == ("Dark mode"); {
+               lbnote1.ForeColor = Color.FromArgb(125, 127, 125);
+               Form1.BackColor   = Color.FromArgb(81, 81, 81);
+               gb1.BackColor     = Color.FromArgb(169, 169, 169);
+            }
+        }
 
         private void btdel_Click(object sender, EventArgs e)
         {
-
+            lbnote1.Items.Clear();
         }
 
         private void btexit_Click(object sender, EventArgs e)
