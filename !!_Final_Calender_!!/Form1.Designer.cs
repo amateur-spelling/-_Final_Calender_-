@@ -46,6 +46,10 @@
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.cbtheme = new System.Windows.Forms.ComboBox();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
+            this.btLight = new System.Windows.Forms.Button();
+            this.btDark = new System.Windows.Forms.Button();
+            this.btGreen = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.gb1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -218,11 +222,51 @@
             this.cbtheme.Size = new System.Drawing.Size(121, 23);
             this.cbtheme.TabIndex = 10;
             // 
+            // btLight
+            // 
+            this.btLight.Location = new System.Drawing.Point(272, 50);
+            this.btLight.Name = "btLight";
+            this.btLight.Size = new System.Drawing.Size(112, 37);
+            this.btLight.TabIndex = 11;
+            this.btLight.Text = "Light mode";
+            this.btLight.UseVisualStyleBackColor = true;
+            // 
+            // btDark
+            // 
+            this.btDark.Location = new System.Drawing.Point(272, 93);
+            this.btDark.Name = "btDark";
+            this.btDark.Size = new System.Drawing.Size(112, 37);
+            this.btDark.TabIndex = 12;
+            this.btDark.Text = "Dark mode";
+            this.btDark.UseVisualStyleBackColor = true;
+            // 
+            // btGreen
+            // 
+            this.btGreen.Location = new System.Drawing.Point(272, 136);
+            this.btGreen.Name = "btGreen";
+            this.btGreen.Size = new System.Drawing.Size(112, 37);
+            this.btGreen.TabIndex = 13;
+            this.btGreen.Text = "Green mode";
+            this.btGreen.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(272, 180);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(112, 71);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "Font (change name and copy and paste as needed)\r\n";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(781, 355);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btGreen);
+            this.Controls.Add(this.btDark);
+            this.Controls.Add(this.btLight);
             this.Controls.Add(this.cbtheme);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.gb1);
@@ -255,5 +299,9 @@
         private ComboBox comboBox2;
         private ComboBox cbtheme;
         private FontDialog fontDialog1;
+        private Button btLight;
+        private Button btDark;
+        private Button btGreen;
+        private Button button1;
     }
 }
