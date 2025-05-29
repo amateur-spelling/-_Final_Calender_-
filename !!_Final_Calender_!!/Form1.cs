@@ -3,6 +3,7 @@ namespace ___Final_Calender___
 {
     public partial class Form1 : Form
     {
+     //   Form MainForm = Form1;
         public Form1()
         {
             InitializeComponent();
@@ -17,12 +18,57 @@ namespace ___Final_Calender___
             note.Add(newnote);
             lbnote1.Text = string.Join(", ", note); ;
             // needs to be tested
-
         }
 
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void btdel_Click(object sender, EventArgs e)
         {
+            lbnote1.Items.Clear();
+        }
+
+        private void btexit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btclear_Click(object sender, EventArgs e)
+        {
+            tbnote1.Text = "";
+        }
+
+        private void btRed_Click(object sender, EventArgs e)
+        {
+            Color Red         = Color.FromArgb(255, 0, 0);
+            tbnote1.ForeColor = Red;
+            lbnote1.ForeColor = Red;
+        }
+
+        private void btBlue_Click(object sender, EventArgs e)
+        {
+            Color Blue        = Color.FromArgb(0, 120, 255);
+            tbnote1.ForeColor = Blue;
+            lbnote1.ForeColor = Blue;
+        }
+
+        private void btGreen_Click(object sender, EventArgs e)
+        {
+            Color Green        = Color.FromArgb(41, 178, 24);
+            tbnote1.ForeColor  = Green;
+            lbnote1.ForeColor  = Green;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+         //   pass
+            // Font stuff - To be added
+        }
+
+        //private void Form1_Load(object sender, EventArgs e)
+        //{
+
+        //}
+        // !!! Delete Later !!!
+        //private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        //{
            //  for (int i = 0; i <= tLen - sLen; i++)
            //     if (text.Substring(i, sLen) == search)
            //int tlen = cbtheme.Text.Length;
@@ -47,7 +93,7 @@ namespace ___Final_Calender___
             //Color [name] = Color.FromArgb([color code]);
           //  for (i <= tlen - glen; i++ ;) {
           //     lbnote1.ForeColor = Green;
-          //Form1.BackColor   = DGreen;
+          //     Form1.BackColor   = DGreen;
           //     gb1.BackColor     = LGreen;
          //   }
         
@@ -56,26 +102,7 @@ namespace ___Final_Calender___
          //      Form1.BackColor   = Color.FromArgb(81, 81, 81);
          //      gb1.BackColor     = Color.FromArgb(169, 169, 169);
           //  }
-        }
-
-        private void btdel_Click(object sender, EventArgs e)
-        {
-            lbnote1.Items.Clear();
-        }
-
-        private void btexit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void btclear_Click(object sender, EventArgs e)
-        {
-            tbnote1.Text = "";
-        }
-
-        //private void Form1_Load(object sender, EventArgs e)
-        //{
-
         //}
+
     }
 }
