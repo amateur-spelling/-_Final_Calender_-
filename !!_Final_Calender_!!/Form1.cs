@@ -14,9 +14,10 @@ namespace ___Final_Calender___
         private void button2_Click(object sender, EventArgs e)
         {
             List<string> note = new List<string>();
-            string newnote  = tbnote1.Text;
-            note.Add(newnote);
-            lbnote1.Text = string.Join(", ", note); ;
+            int nLen = tbnote1.Text.Length;
+            
+            note.Add(tbnote1.Text);
+            lbnote1.Items.Add(note);//string.Join(", ", note);
             // needs to be tested
         }
 
@@ -51,15 +52,15 @@ namespace ___Final_Calender___
 
         private void btGreen_Click(object sender, EventArgs e)
         {
-            Color Green        = Color.FromArgb(41, 178, 24);
-            tbnote1.ForeColor  = Green;
-            lbnote1.ForeColor  = Green;
+            Color Green       = Color.FromArgb(41, 178, 24);
+            tbnote1.ForeColor = Green;
+            lbnote1.ForeColor = Green;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btfont_Click(object sender, EventArgs e)
         {
-         //   pass
-            // Font stuff - To be added
+            lbnote1.Font = new Font("Times New Roman", 12);
+            tbnote1.Font = new Font("Times New Roman", 12);
         }
 
         //private void Form1_Load(object sender, EventArgs e)

@@ -48,7 +48,7 @@
             this.btRed = new System.Windows.Forms.Button();
             this.btBlue = new System.Windows.Forms.Button();
             this.btGreen = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btfont = new System.Windows.Forms.Button();
             this.gb1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -132,7 +132,6 @@
             this.cbmonth.Name = "cbmonth";
             this.cbmonth.Size = new System.Drawing.Size(121, 23);
             this.cbmonth.TabIndex = 0;
-            this.cbmonth.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // groupBox2
             // 
@@ -217,7 +216,6 @@
             this.btRed.TabIndex = 11;
             this.btRed.Text = "Red Text";
             this.btRed.UseVisualStyleBackColor = true;
-            this.btRed.Click += new System.EventHandler(this.btLight_Click);
             // 
             // btBlue
             // 
@@ -227,7 +225,6 @@
             this.btBlue.TabIndex = 12;
             this.btBlue.Text = "Blue Text";
             this.btBlue.UseVisualStyleBackColor = true;
-            this.btBlue.Click += new System.EventHandler(this.btDark_Click);
             // 
             // btGreen
             // 
@@ -239,22 +236,23 @@
             this.btGreen.UseVisualStyleBackColor = true;
             this.btGreen.Click += new System.EventHandler(this.btGreen_Click);
             // 
-            // button1
+            // btfont
             // 
-            this.button1.Location = new System.Drawing.Point(272, 180);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(112, 71);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "Font (change name and copy and paste as needed)\r\n";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btfont.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btfont.Location = new System.Drawing.Point(272, 180);
+            this.btfont.Name = "btfont";
+            this.btfont.Size = new System.Drawing.Size(112, 71);
+            this.btfont.TabIndex = 14;
+            this.btfont.Text = "Font (change name and copy and paste as needed)\r\n";
+            this.btfont.UseVisualStyleBackColor = true;
+     //       this.btfont.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(781, 355);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btfont);
             this.Controls.Add(this.btGreen);
             this.Controls.Add(this.btBlue);
             this.Controls.Add(this.btRed);
@@ -292,5 +290,6 @@
         private Button btBlue;
         private Button btGreen;
         private Button button1;
+        private Button btfont;
     }
 }
