@@ -36,21 +36,14 @@
             this.lbnote1 = new System.Windows.Forms.ListBox();
             this.tbnote1 = new System.Windows.Forms.TextBox();
             this.cbmonth = new System.Windows.Forms.ComboBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.listBox2 = new System.Windows.Forms.ListBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
             this.btRed = new System.Windows.Forms.Button();
             this.btBlue = new System.Windows.Forms.Button();
             this.btGreen = new System.Windows.Forms.Button();
-            this.btfont = new System.Windows.Forms.Button();
+            this.btTRNfnt = new System.Windows.Forms.Button();
+            this.btBlack = new System.Windows.Forms.Button();
+            this.btSUIfnt = new System.Windows.Forms.Button();
             this.gb1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // gb1
@@ -133,81 +126,6 @@
             this.cbmonth.Size = new System.Drawing.Size(121, 23);
             this.cbmonth.TabIndex = 0;
             // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.button8);
-            this.groupBox2.Controls.Add(this.button7);
-            this.groupBox2.Controls.Add(this.button5);
-            this.groupBox2.Controls.Add(this.button6);
-            this.groupBox2.Controls.Add(this.listBox2);
-            this.groupBox2.Controls.Add(this.textBox2);
-            this.groupBox2.Controls.Add(this.comboBox2);
-            this.groupBox2.Location = new System.Drawing.Point(485, 12);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(245, 299);
-            this.groupBox2.TabIndex = 9;
-            this.groupBox2.TabStop = false;
-            // 
-            // button8
-            // 
-            this.button8.Location = new System.Drawing.Point(162, 245);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(72, 48);
-            this.button8.TabIndex = 5;
-            this.button8.Text = "button8";
-            this.button8.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            this.button7.Location = new System.Drawing.Point(84, 245);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(72, 48);
-            this.button7.TabIndex = 6;
-            this.button7.Text = "button7";
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(6, 245);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(72, 48);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(133, 208);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(73, 23);
-            this.button6.TabIndex = 4;
-            this.button6.Text = "button6";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // listBox2
-            // 
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.ItemHeight = 15;
-            this.listBox2.Location = new System.Drawing.Point(4, 51);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(230, 154);
-            this.listBox2.TabIndex = 3;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(7, 208);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(120, 23);
-            this.textBox2.TabIndex = 2;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(6, 22);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 23);
-            this.comboBox2.TabIndex = 0;
-            // 
             // btRed
             // 
             this.btRed.Location = new System.Drawing.Point(272, 50);
@@ -236,34 +154,54 @@
             this.btGreen.UseVisualStyleBackColor = true;
             this.btGreen.Click += new System.EventHandler(this.btGreen_Click);
             // 
-            // btfont
+            // btTRNfnt
             // 
-            this.btfont.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btfont.Location = new System.Drawing.Point(272, 180);
-            this.btfont.Name = "btfont";
-            this.btfont.Size = new System.Drawing.Size(112, 71);
-            this.btfont.TabIndex = 14;
-            this.btfont.Text = "Font (change name and copy and paste as needed)\r\n";
-            this.btfont.UseVisualStyleBackColor = true;
-     //       this.btfont.Click += new System.EventHandler(this.button1_Click);
+            this.btTRNfnt.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btTRNfnt.Location = new System.Drawing.Point(272, 220);
+            this.btTRNfnt.Name = "btTRNfnt";
+            this.btTRNfnt.Size = new System.Drawing.Size(112, 43);
+            this.btTRNfnt.TabIndex = 14;
+            this.btTRNfnt.Text = "Times New Roman Font";
+            this.btTRNfnt.UseVisualStyleBackColor = true;
+            this.btTRNfnt.Click += new System.EventHandler(this.btTNRfnt_Click);
+            // 
+            // btBlack
+            // 
+            this.btBlack.Location = new System.Drawing.Point(272, 177);
+            this.btBlack.Name = "btBlack";
+            this.btBlack.Size = new System.Drawing.Size(112, 37);
+            this.btBlack.TabIndex = 15;
+            this.btBlack.Text = "Black Text";
+            this.btBlack.UseVisualStyleBackColor = true;
+            this.btBlack.Click += new System.EventHandler(this.btBlack_Click);
+            // 
+            // btSUIfnt
+            // 
+            this.btSUIfnt.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btSUIfnt.Location = new System.Drawing.Point(272, 269);
+            this.btSUIfnt.Name = "btSUIfnt";
+            this.btSUIfnt.Size = new System.Drawing.Size(112, 42);
+            this.btSUIfnt.TabIndex = 16;
+            this.btSUIfnt.Text = "Segoe UI Font";
+            this.btSUIfnt.UseVisualStyleBackColor = true;
+            this.btSUIfnt.Click += new System.EventHandler(this.btSUIfnt_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(781, 355);
-            this.Controls.Add(this.btfont);
+            this.ClientSize = new System.Drawing.Size(419, 355);
+            this.Controls.Add(this.btSUIfnt);
+            this.Controls.Add(this.btBlack);
+            this.Controls.Add(this.btTRNfnt);
             this.Controls.Add(this.btGreen);
             this.Controls.Add(this.btBlue);
             this.Controls.Add(this.btRed);
-            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.gb1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.gb1.ResumeLayout(false);
             this.gb1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -277,19 +215,12 @@
         private Button btsave;
         private ListBox lbnote1;
         private Button btclear;
-        private GroupBox groupBox2;
-        private Button button8;
-        private Button button7;
-        private Button button5;
-        private Button button6;
-        private ListBox listBox2;
-        private TextBox textBox2;
-        private ComboBox comboBox2;
         private FontDialog fontDialog1;
         private Button btRed;
         private Button btBlue;
         private Button btGreen;
-        private Button button1;
-        private Button btfont;
+        private Button btSUIfnt;
+        private Button btTRNfnt;
+        private Button btBlack;
     }
 }
