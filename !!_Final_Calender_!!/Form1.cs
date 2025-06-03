@@ -15,13 +15,13 @@ namespace ___Final_Calender___
         {
              List<string> note = new List<string>();
             string newnote = tbnote1.Text;
-         //    note  newnote;
+             note.Append(newnote);
              for (int i = 0; i < note.Count; i++)
              {
                  lbnote1.Items.Add(note[i]);
              }
              
-             //   note.Add(tbnote1.Text);
+            //   note.Add(tbnote1.Text);
             //string.Join(", ", note);
             // needs to be tested
         }
@@ -29,11 +29,12 @@ namespace ___Final_Calender___
         private void btdel_Click(object sender, EventArgs e)
         {
             //note1te1.Items.Clear();
-      //      lbl.Text = "";
+            lbl.Text = "";
         }
 
-        private void btexit_Click(object se, EventA     e)
-       Exit();
+        private void btexit_Click(object sender, EventArgs e)
+        {    
+            Application.Exit();
         }
 
         private void btclear_Click(object sender, EventArgs e)
@@ -73,12 +74,13 @@ namespace ___Final_Calender___
         {
             //le1.Fon    t = new Font("Times New Roman",);
             lbl.Font     = new Font("Times New Roman", 9);
+            tbnote1.Font = new Font("Times New Roman",9);
         }
 
         private void btSUIfnt_Click(object sender, EventArgs e)
         {
-            lbl         = new Font("Se);
-            tbnote1      ote1.Font = new Font("Se);
+            lbl.Font     = new Font("Segoe UI", 9);
+            tbnote1.Font = new Font("Segoe UI",9);
         }
 
         // !! Delete later - Extra code - Delete later !!
