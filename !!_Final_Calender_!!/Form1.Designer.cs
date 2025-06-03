@@ -43,6 +43,7 @@
             this.btTRNfnt = new System.Windows.Forms.Button();
             this.btBlack = new System.Windows.Forms.Button();
             this.btSUIfnt = new System.Windows.Forms.Button();
+            this.lbl = new System.Windows.Forms.Label();
             this.gb1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -106,9 +107,9 @@
             // 
             this.lbnote1.FormattingEnabled = true;
             this.lbnote1.ItemHeight = 15;
-            this.lbnote1.Location = new System.Drawing.Point(4, 51);
+            this.lbnote1.Location = new System.Drawing.Point(4, 60);
             this.lbnote1.Name = "lbnote1";
-            this.lbnote1.Size = new System.Drawing.Size(235, 154);
+            this.lbnote1.Size = new System.Drawing.Size(235, 139);
             this.lbnote1.TabIndex = 3;
             // 
             // tbnote1
@@ -134,6 +135,7 @@
             this.btRed.TabIndex = 11;
             this.btRed.Text = "Red Text";
             this.btRed.UseVisualStyleBackColor = true;
+            this.btRed.Click += new System.EventHandler(this.btRed_Click);
             // 
             // btBlue
             // 
@@ -143,6 +145,7 @@
             this.btBlue.TabIndex = 12;
             this.btBlue.Text = "Blue Text";
             this.btBlue.UseVisualStyleBackColor = true;
+            this.btBlue.Click += new System.EventHandler(this.btBlue_Click);
             // 
             // btGreen
             // 
@@ -186,11 +189,21 @@
             this.btSUIfnt.UseVisualStyleBackColor = true;
             this.btSUIfnt.Click += new System.EventHandler(this.btSUIfnt_Click);
             // 
+            // lbl
+            // 
+            this.lbl.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.lbl.Location = new System.Drawing.Point(306, 9);
+            this.lbl.Name = "lbl";
+            this.lbl.Size = new System.Drawing.Size(26, 27);
+            this.lbl.TabIndex = 7;
+            this.lbl.Text = "lbl";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(419, 355);
+            this.Controls.Add(this.lbl);
             this.Controls.Add(this.btSUIfnt);
             this.Controls.Add(this.btBlack);
             this.Controls.Add(this.btTRNfnt);
@@ -222,5 +235,6 @@
         private Button btSUIfnt;
         private Button btTRNfnt;
         private Button btBlack;
+        private Label lbl;
     }
 }

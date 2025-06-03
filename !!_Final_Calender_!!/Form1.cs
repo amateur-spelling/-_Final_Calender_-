@@ -13,11 +13,14 @@ namespace ___Final_Calender___
 
         private void button2_Click(object sender, EventArgs e)
         {
-            List<string> note = new List<string>();
-            for (int i = 0; i < note.Count; i++)
-            {
-                lbnote1.Items.Add(note[i]);
-            }
+             List<string> note = new List<string>();
+            string newnote = tbnote1.Text;
+         //    note  newnote;
+             for (int i = 0; i < note.Count; i++)
+             {
+                 lbnote1.Items.Add(note[i]);
+             }
+             
              //   note.Add(tbnote1.Text);
             //string.Join(", ", note);
             // needs to be tested
@@ -25,12 +28,12 @@ namespace ___Final_Calender___
 
         private void btdel_Click(object sender, EventArgs e)
         {
-            lbnote1.Items.Clear();
+            //note1te1.Items.Clear();
+      //      lbl.Text = "";
         }
 
-        private void btexit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
+        private void btexit_Click(object se, EventA     e)
+       Exit();
         }
 
         private void btclear_Click(object sender, EventArgs e)
@@ -42,40 +45,40 @@ namespace ___Final_Calender___
         {
             Color Red         = Color.FromArgb(255, 8, 8);
             tbnote1.ForeColor = Red;
-            lbnote1.ForeColor = Red;
+            lbl.ForeColor     = Red;
         }
 
         private void btBlue_Click(object sender, EventArgs e)
         {
             Color Blue        = Color.FromArgb(8, 135, 255);
             tbnote1.ForeColor = Blue;
-            lbnote1.ForeColor = Blue;
+            lbl.ForeColor     = Blue;
         }
 
         private void btGreen_Click(object sender, EventArgs e)
         {
             Color Green       = Color.FromArgb(41, 178, 24);
             tbnote1.ForeColor = Green;
-            lbnote1.ForeColor = Green;
+            lbl.ForeColor     = Green;
         }
 
         private void btBlack_Click(object sender, EventArgs e)
         {
             Color Black       = Color.FromArgb(0, 0, 0);
             tbnote1.ForeColor = Black;
-            lbnote1.ForeColor = Black;
+            lbl.ForeColor     = Black;
         }
 
         private void btTNRfnt_Click(object sender, EventArgs e)
         {
-            lbnote1.Font = new Font("Times New Roman", 9);
-            tbnote1.Font = new Font("Times New Roman", 9);
+            //le1.Fon    t = new Font("Times New Roman",);
+            lbl.Font     = new Font("Times New Roman", 9);
         }
 
         private void btSUIfnt_Click(object sender, EventArgs e)
         {
-            lbnote1.Font = new Font("Segoe UI", 9);
-            tbnote1.Font = new Font("Segoe UI", 9);
+            lbl         = new Font("Se);
+            tbnote1      ote1.Font = new Font("Se);
         }
 
         // !! Delete later - Extra code - Delete later !!
