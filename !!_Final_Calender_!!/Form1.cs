@@ -13,17 +13,53 @@ namespace ___Final_Calender___
 
         private void button2_Click(object sender, EventArgs e)
         {
-             List<string> note = new List<string>();
-            string newnote = tbnote1.Text;
-             note.Append(newnote);
-             for (int i = 0; i < note.Count; i++)
-             {
-                 lbnote1.Items.Add(note[i]);
-             }
-             
-            //   note.Add(tbnote1.Text);
-            //string.Join(", ", note);
-            // needs to be tested
+            var suns = new List<string>();
+            List<string> mon = new List<string>();
+            List<string> tus = new List<string>();
+            List<string> wed = new List<string>();
+            List<string> thu = new List<string>();
+            List<string> fri = new List<string>();
+            List<string> sat = new List<string>();
+            string days = cbd.Text;
+            string newnote   = tbnote1.Text;
+            if (days == "Sunday")
+            {
+                suns.Append(newnote);
+                foreach (var sun in suns)
+                {
+                    lbl.Text = sun;
+                }
+
+            }
+            else if (days == "Monday")
+            {
+                mon.Append(newnote);
+                for (int i = 0; i < mon.Count; i++)
+                {
+                    lbl.Text = (mon[i]);
+                }
+            }
+            else if (days == "Tuesday")
+            {
+                tus.Append(newnote);
+            }
+            else if (days == "Wednesday")
+            {
+                wed.Append(newnote);
+            }
+            else if (days == "Thursday")
+            {
+                thu.Append(newnote);
+            }
+            else if (days == "Friday")
+            {
+                fri.Append(newnote);
+            }
+            else if (days == "Saturday")
+            {
+                sat.Append(newnote);
+            }
+
         }
 
         private void btdel_Click(object sender, EventArgs e)
@@ -80,7 +116,7 @@ namespace ___Final_Calender___
         private void btSUIfnt_Click(object sender, EventArgs e)
         {
             lbl.Font     = new Font("Segoe UI", 9);
-            tbnote1.Font = new Font("Segoe UI",9);
+            tbnote1.Font = new Font("Segoe UI", 9);
         }
 
         // !! Delete later - Extra code - Delete later !!
